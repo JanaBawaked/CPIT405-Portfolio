@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Jana Bawaked by email, GitHub or the contact form.">
+    <title>Contact | Jana Bawaked</title>
+
+    <!-- Fonts: Fraunces (headings) and DM Sans (body). Georgia and Arial are used if they do not load. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Jana Bawaked</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="cv.html">About &amp; CV</a>
+                <a href="labs.html">Labs &amp; Projects</a>
+                <a href="contact.html" class="active" aria-current="page">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container page-title">
+            <h1>Contact</h1>
+            <p>
+                For questions about my work or to get in touch, send a message using the form
+                or contact me through the details below.
+            </p>
+        </section>
+
+        <div class="container contact-layout">
+
+            <!-- Contact details -->
+            <aside class="contact-info">
+                <div class="item">
+                    <h3>University email</h3>
+                    <p><a href="mailto:jbawa@stu.kau.edu.sa">jbawa@stu.kau.edu.sa</a></p>
+                </div>
+
+                <div class="item">
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/JanaBawaked" target="_blank" rel="noopener">github.com/JanaBawaked</a></p>
+                </div>
+
+                <div class="item">
+                    <h3>Location</h3>
+                    <p>Jeddah, Saudi Arabia</p>
+                </div>
+            </aside>
+
+            <!-- Contact form: sent by the free FormSubmit service -->
+            <section class="contact-form">
+                <h2>Send a message</h2>
+
+                <form action="https://formsubmit.co/jbawa@stu.kau.edu.sa" method="POST">
+
+                    <!-- FormSubmit settings -->
+                    <input type="hidden" name="_subject" value="New message from my CPIT405 portfolio">
+                    <input type="hidden" name="_template" value="table">
+                    <!-- Spam trap: people never see this field, bots fill it in -->
+                    <input class="hidden-field" type="text" name="_honey" tabindex="-1" autocomplete="off">
+
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Message type</legend>
+                        <div class="radio-group">
+                            <label><input type="radio" name="message_type" value="Inquiry" checked>Inquiry</label>
+                            <label><input type="radio" name="message_type" value="Project question">Project question</label>
+                            <label><input type="radio" name="message_type" value="Feedback">Feedback</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Send message</button>
+                    <p class="form-note">After submitting, please complete any confirmation requested by the form service.</p>
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Jana Bawaked. CPIT 405 Portfolio.</p>
+            <div class="footer-links">
+                <a href="mailto:jbawa@stu.kau.edu.sa">Email</a>
+                <a href="https://github.com/JanaBawaked" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
